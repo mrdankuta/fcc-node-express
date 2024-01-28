@@ -3,6 +3,11 @@ let app = express();
 
 
 
+// Challenge 4
+app.use(express.static(__dirname + '/public'));
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/views/index.html');
+})
 
 
 
@@ -14,26 +19,4 @@ let app = express();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
