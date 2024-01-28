@@ -3,6 +3,10 @@ let app = express();
 
 
 
+// Challenge 3
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/views/index.html');
+})
 
 
 
@@ -17,23 +21,4 @@ let app = express();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
