@@ -14,7 +14,7 @@ let app = express();
 // V2
 app.route('/name')
     .get((req, res) => {
-        let fullname = req.query.first +'' + req.query.last;
+        let fullname = req.query.first + ' ' + req.query.last;
         res.json({
             name: fullname
         });
